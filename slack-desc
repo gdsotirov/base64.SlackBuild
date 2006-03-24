@@ -1,0 +1,11 @@
+base64: base64 (Encode or decode file as MIME base64)
+base64:
+base64: base64 is a command line utility which encodes and decodes files in
+base64: this format. It can be used within a pipeline as an encoding or
+base64: decoding filter, and is most commonly used in this manner as part of
+base64: an automated mail processing system.
+base64:
+base64: URL: http://www.fourmilab.ch/webtools/base64/
+base64:
+base64: Packaged by Georgi D. Sotirov <gdsotirov@dir.bg>
+base64:
