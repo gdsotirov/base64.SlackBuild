@@ -1,0 +1,17 @@
+41a42
+> DOCDIR=$(DESTDIR)$(prefix)/doc/$(TREE)
+92c93,94
+< install-bin: $(BINDIR) base64
+---
+> install-bin: base64
+> 	$(INSTALL) -d -m 755 $(BINDIR)
+95a98
+> 	$(INSTALL) -d -m 755 $(MAN1DIR)
+98c101,105
+< install: install-bin install-man
+---
+> install-doc: base64.pdf
+> 	$(INSTALL) -d -m 755 $(DOCDIR)
+> 	$(INSTALL_DATA) base64.pdf $(DOCDIR)/base64.pdf
+> 
+> install: install-bin install-man install-doc
